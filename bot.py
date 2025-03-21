@@ -57,7 +57,6 @@ async def on_message_create(event):
 @interactions.slash_command(name="howdy", description="Howdy howdy howdy!", scopes=[1117995178171564143])
 async def howdy_command(ctx: interactions.SlashContext):
     await ctx.send("Howdy!")
-'''
 riley_activities = strava_client.get_activities(after="2025-01-01", limit=10)
 
 array_of_activities = []
@@ -65,6 +64,5 @@ for activity in riley_activities:
     array_of_activities.append(activity)
 
 print(f"Most recent activity: {array_of_activities[:-1]}")
-'''
 print(url)
 bot.start(BOT_TOKEN)
